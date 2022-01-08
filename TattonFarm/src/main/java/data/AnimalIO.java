@@ -16,7 +16,12 @@ public class AnimalIO {
     {
     File file = new File(filepath);
     PrintWriter out = new PrintWriter(new FileWriter(file, true));
-    out.println( animal.getAnimalId()+ "|"+animal.getDiseaseName()+animal.getTreatmentDetails());
+    out.println( animal.getAnimalId()+ animal.getDuration() +"|"+
+            animal.getInstructions()+ animal.getMedName() + animal.getOtherVisitNotes() +"|" +
+            animal.getPulse() + animal.getRespirationRate() + animal.getotherDetailsVitals() +"|"+
+            animal.getTemp() + animal.getWeight() + animal.getClinicalNotes()
+            
+            );
 out.close();
     }
 }
