@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>        
+</head>
+
+<body>
+    <div class = "container-lg"> 
+        <div class="row-cols-md-6 align-content-center">
+            <div class="panel-primary">
+                <div class="panel-heading text-center">
+                    This is a heading
+                    <h1> Registration form</h1>
+                </div>
+                <div class="panel-body">
+                    <form action="connect.jsp" method="post">
+                    <form>
+                        <div class="form-group">
+                            <label for="first_name">First name</label>
+                            <input type="text" class="form-control" id="first_name" name="firstname"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="last_name">Last name</label>
+                            <input type="text" class="form-control" id="last_name" name="lastname"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div>
+                                <label for="male" class="radio-inline"><input type ="radio" name = "gender" value="m" id="male">Male</label>
+                                <label for="female" class="radio-inline"><input type ="radio" name = "gender" value="f" id="feale">Female</label>
+                                <label for="others" class="radio-inline"><input type ="radio" name = "gender" value="u" id="others">Rather not say</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" name="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password</label>
+                            <input type="password" class="form-control" id="pass" name="pass"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">phone number</label>
+                            <input type="text" class="form-control" id="phone" name="phone"/>
+                        </div>
+                        <input type="submit" class="btn btn-primary">
+                    </form>
+                </div>
+                <div class="panel-footer text-right">
+                    <small>&COPY; Kerberos</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
